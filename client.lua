@@ -19,7 +19,7 @@ end
 
 ]]
 
-getgenv().Key = "123123"
+getgenv().Key = "123123" -- Valid key is "hacker"
 
 
 local Key = getgenv().Key or ""
@@ -197,7 +197,8 @@ local function Load()
 
 end
 
-if (Load()[1] == true) and (Load()[1] == not false) and (Load()[2] == false)  and (Load()[2] == not true) and (Load()[4] == Key) and (Key == Load()[4] or getgenv().Key) and (Load()[2+3] == not false) and (Load()[1+4] == true) then 
+if (Load()[1] == true) and (Load()[1] == not false) and (Load()[2] == false)  and (Load()[2] == not true) and (Load()[4] == Key) and (Key == Load()[4] or getgenv().Key) and (Load()[2+3] == not false) and (Load()[1+4] == true) and Key == "hacker" then 
     print("Whitelisted!")
+else
+    return;
 end
-
