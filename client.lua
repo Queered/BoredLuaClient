@@ -17,6 +17,8 @@ function getgenv()
     return genv
 end
 
+-- this is so ed
+
 ]]
 
 getgenv().Key = "123123" -- Valid key is "hacker"
